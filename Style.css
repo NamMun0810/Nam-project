@@ -1,0 +1,172 @@
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG91c2luZ3xlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(47, 62, 70, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Hero Section with Background Image */
+#hero-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Text */
+.hero-text {
+    font-size: 2.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+    animation: flyInFromTop 2s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Animation for the Text to Fly In from the Top */
+@keyframes flyInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Search Bar */
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Insights Graph */
+canvas {
+    width: 100%;
+    height: 400px;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(47, 62, 70, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#about-section i {
+    margin-right: 8px;
+}
